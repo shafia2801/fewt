@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: skyblue;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    
+body
+{
+background-image: url('pic.jpg'); 
+background-size: cover;
+}
+.sidenav 
+{
+height: 100%;
+width: 250px; 
+position: fixed;
+top: 0;
+left: 0;
+background-color:skyblue; 
+padding-top: 20px;            
+}
+.sidenav a 
+{
+padding: 15px 15px 15px 15px;
+text-decoration: none;
+font-size: 18px;
+color: #fff;
+display: block;
+}
+.sidenav a:hover 
+{
+background-color: #555;
+}
+ul
+{
+ list-style-type:none;
+ color:pink;
+}
+</style>
+</head>
+<body id="about">
+<header>
+<div class="sidenav"> <ul>
+<li> <h2> <font color="red"; > &#9924CUMULUS&#9924  </font> </h2> </li> </ul>    
+<a  data-active="video" href="video.html">Home</a>
+<a data-active="about" href="abt.html">SignUp</a>
+<a data-active="ser" href="ser.html">Services</a>
+<a data-active="port"  href="audio.html">Portfolio</a>
+<a  data-active="faq" href="faq.html">FAQ</a>
+<a  data-active="sup" href="support.html">SUPPORT</a>
+<a data-active="non" href="nonauto.html">BLOG</a>
+<a  data-active="con" href="contact.html">Contact</a>
+</div>
+</header>
+<div style="margin-left: 250px;padding: 50px; ">
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="&#128064" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email"  value="&#128269" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password"   name="password" required>
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+    </div>
+
+    <script>
+        
+        function submitForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            
+            alert("Registration successful!\nName: " + name + "\nEmail: " + email);
+        }
+    </script>
+</div>
+<scipt type="text/javascript" src="sc1.js">
+</script>
+</body>
+</html>
